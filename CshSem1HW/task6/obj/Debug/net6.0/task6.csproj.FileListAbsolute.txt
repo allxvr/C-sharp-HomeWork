@@ -1,0 +1,15 @@
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\bin\Debug\net6.0\task6.exe
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\bin\Debug\net6.0\task6.deps.json
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\bin\Debug\net6.0\task6.runtimeconfig.json
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\bin\Debug\net6.0\task6.dll
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\bin\Debug\net6.0\ref\task6.dll
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\bin\Debug\net6.0\task6.pdb
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\obj\Debug\net6.0\task6.csproj.AssemblyReference.cache
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\obj\Debug\net6.0\task6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\obj\Debug\net6.0\task6.AssemblyInfoInputs.cache
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\obj\Debug\net6.0\task6.AssemblyInfo.cs
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\obj\Debug\net6.0\task6.csproj.CoreCompileInputs.cache
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\obj\Debug\net6.0\task6.dll
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\obj\Debug\net6.0\ref\task6.dll
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\obj\Debug\net6.0\task6.pdb
+C:\Users\MadSteve\Desktop\WORKSPACE\C-sharp HomeWork\CshSem1HW\task6\obj\Debug\net6.0\task6.genruntimeconfig.cache
