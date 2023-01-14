@@ -9,7 +9,10 @@ int number = ReadInt("Введите число N: ");
 int i = 1;
 while (i <= number)
 { 
-    Console.Write($"{i*i*i} \t ");
+    // Console.Write($"{i*i*i} \t ");
+    // if (i%5 == 0) Console.WriteLine();
+    int x = i*i*i;
+    Console.Write("{0,10}\t|", x);
     if (i%5 == 0) Console.WriteLine();
     i++;
 }
