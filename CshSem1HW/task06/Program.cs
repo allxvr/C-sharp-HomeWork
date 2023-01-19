@@ -6,7 +6,24 @@
 */
 Console.Clear();
 Console.Write("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
+Thread.Sleep(2000); //доп добавил задержку вывода, типо думает...
+// int a = Convert.ToInt32(Console.ReadLine()); убрали т.к. мешает проверке на число
+int a; //задаем целочисленный аргумент
+// встроенной функцией tryparse проверяем-парсим значение из консоли на ц.число, 
+// и в случае успеха возвращаем взятое из строки как числовое значение аргумента 
+while(!int.TryParse(Console.ReadLine(), out a)) 
+{
+    Console.WriteLine("Ошибка");
+    return;
+}
+// Проверка на число с помощью TryParse конвертирует строку напр из консоли
+// в целое число и при успехе выходному параметру задается числовое значение строки
+// string text = Console.ReadLine();
+// while(!int.TryParse(text, out a)) 
+// {
+//     Console.WriteLine("Ошибка");
+//     return;
+// }
 if (a%2 == 0)
 {
 	Console.WriteLine("Ваше число чётное");
