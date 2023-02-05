@@ -27,7 +27,7 @@ int sumOddNum(int[] NewArray)
     return sumOdd;
 }
 
-int[] NewArr = CreateRandomArray(10, 0, 1);
+int[] NewArr = CreateRandomArray(10, -10, 10);
 int sumOdd = sumOddNum(NewArr);
 Console.WriteLine($"Сумма элементов нечетных позиций массива:"
                  +$"\n[{String.Join(", ", NewArr)}]\nравна {sumOdd}");

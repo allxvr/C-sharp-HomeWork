@@ -32,3 +32,4 @@ int[] NewArr = CreateRandomArray(10, 1, 99);
 int difMiMi = difMinMax(NewArr);
 Console.WriteLine($"Разница между максимальным и минимальным элементом массива:"
                  + $"\n[{String.Join(", ", NewArr)}]\nравна {difMiMi}");
+                 
