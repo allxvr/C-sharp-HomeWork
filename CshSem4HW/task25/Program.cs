@@ -10,7 +10,7 @@
 Console.Clear();
 int a = ConsRead("Введите А: ");
 int b = ConsRead("Введите B: ");
-riseNum(a, b);
+Console.Write($"Число {a} в степени {b} равно => {riseNum(a, b)}");
 
 // Метод ввода в консоль
 int ConsRead(string mes)
@@ -19,13 +19,25 @@ int ConsRead(string mes)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-// Процедура возведения в степень
-void riseNum(int x, int y)
+// // Процедура возведения в степень
+// void riseNum(int x, int y)
+// {
+//     int num = 1;
+//     for (int i = 1; i <= y; i++)
+//     {
+//         num *= x;
+//     }
+//     Console.Write($"Число {a} в степени {b} равно => {num}");
+// }
+
+// Метод возведения в степень
+int riseNum(int num, int rank)
 {
-    int num = 1;
-    for (int i = 1; i <= y; i++)
+    if (num ==0) return 1;
+    int result = num;
+    for (int i = 2; i <= rank; i++)
     {
-        num *= x;
+        result *= num;
     }
-    Console.Write($"Число {a} в степени {b} равно => {num}");
+    return result;
 }

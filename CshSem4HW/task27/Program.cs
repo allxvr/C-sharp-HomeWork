@@ -6,9 +6,10 @@
 9012 -> 12 
 */
 
-int number = ConsRead("Введите число: ");
-int len = numLen(number);
-sumDig(number, len);
+int num = ConsRead("Введите число: ");
+sumDigNum (num);
+// int len = numLen(num);
+// sumDig(num, len);
 
 
 // Метод ввода в консоль
@@ -18,7 +19,20 @@ int ConsRead(string mes)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-// Метод нахождения количества цифр в числе
+// Метод нахождения суммы чисел в числе
+void sumDigNum (int number)
+{
+    int n = Math.Abs(number);
+    int digSum = 0;
+    while (n>0)
+    {
+        digSum +=n%10;
+        n/=10;
+    }
+    Console.WriteLine($"Сумма цифр в числе {number} равно => {digSum}");
+}
+
+/* // Метод нахождения количества цифр в числе
 int numLen(int number)
 {
     int numberMod = Math.Abs(number);
@@ -41,9 +55,5 @@ void sumDig (int num, int len)
         sum += num % 10;
         num /= 10;
     }
-    Console.WriteLine($"Сумма цифр в числе {number} равно => {sum}");
-}
-
-
-
-
+    Console.WriteLine($"Сумма цифр в числе {num} равно => {sum}");
+} */

@@ -29,10 +29,3 @@ int ConsRead(string mes)
     Console.Write(mes);
     return Convert.ToInt32(Console.ReadLine());
 }
-
-
-
-
-
-
-
