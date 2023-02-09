@@ -17,17 +17,29 @@ int[] CreateRandomArray(int N, int start, int end)
     return RandomArray;
 }
 
-int evenNum(int[] NewArray)
+int EvenNum(int[] array)
 {
     int sumEven = 0;
-    for (int i = 0; i < NewArray.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if (NewArray[i] % 2 == 0) sumEven++;
+        if (array[i] % 2 == 0) sumEven++;
     }
     return sumEven;
 }
 
-int[] NewArr = CreateRandomArray(10, 100, 999);
-int numEvenNum = evenNum(NewArr);
-Console.WriteLine($"Количество четных чисел в массиве: \n[{String.Join(", ", NewArr)}]"
+// метод с циклом foreach чтобы переменная item принимала значения последовательно 
+//для каждого элемента массива
+int EvenNum2 (int[] array)
+{
+    int count=0;
+    foreach (var item in array)
+    {
+        if (item%2==0) count++;
+    }
+    return count;
+}
+
+int[] newArr = CreateRandomArray(10, 100, 999);
+int numEvenNum = EvenNum(newArr);
+Console.WriteLine($"Количество четных чисел в массиве: \n[{String.Join(", ", newArr)}]"
                  +$"\nравно {numEvenNum}");

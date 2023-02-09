@@ -17,17 +17,17 @@ int[] CreateRandomArray(int N, int start, int end)
     return RandomArray;
 }
 
-int sumOddNum(int[] NewArray)
+int SumOddNum(int[] array)
 {
     int sumOdd = 0;
-    for (int i = 1; i < NewArray.Length; i += 2)
+    for (int i = 1; i < array.Length; i += 2)
     {
-        sumOdd += NewArray[i];
+        sumOdd += array[i];
     }
     return sumOdd;
 }
 
-int[] NewArr = CreateRandomArray(10, -10, 10);
-int sumOdd = sumOddNum(NewArr);
+int[] newArr = CreateRandomArray(10, -10, 10);
+int sumOdd = SumOddNum(newArr);
 Console.WriteLine($"Сумма элементов нечетных позиций массива:"
-                 +$"\n[{String.Join(", ", NewArr)}]\nравна {sumOdd}");
+                 +$"\n[{String.Join(", ", newArr)}]\nравна {sumOdd}");
