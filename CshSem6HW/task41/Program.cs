@@ -5,6 +5,37 @@
 -1, -7, 567, 89, 223-> 3 
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Console.Write("Введите числа через запятую: ");
 int[] numbers = StringToArray(Console.ReadLine());
 
