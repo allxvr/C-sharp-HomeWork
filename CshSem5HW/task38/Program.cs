@@ -33,18 +33,19 @@ int DifMinMax2(int[] array)
 {
     int min = array[0];
     int max = array[0];
+    
     // foreach чтобы переменная item принимала значения последовательно 
     //для каждого элемента массива
     foreach (var item in array)
     {
-        if (min > item) min = array[i];
-        if (max < item) max = array[i];
+        if (min > item) min = item;
+        if (max < item) max = item;
     }
     return max - min;
 }
 
 int[] newArr = CreateRandomArray(10, 1, 99);
-int difMiMi = DifMinMax(newArr);
+int difMiMi = DifMinMax2(newArr);
 Console.WriteLine($"Разница между максимальным и минимальным элементом массива:"
                  + $"\n[{String.Join(", ", newArr)}]\nравна {difMiMi}");
 
