@@ -8,10 +8,10 @@
 */
 
 int rows = ConsRead("Введите кол-во строк: ");
-int colums = ConsRead("Введите кол-во столбцов: ");
+int columns = ConsRead("Введите кол-во столбцов: ");
 // int rows = 3;
 // int colums = 4;
-int[,] numArray = new int[rows, colums];
+int[,] numArray = new int[rows, columns];
 FillArray2D(numArray);
 PrintArray2D(numArray);
 

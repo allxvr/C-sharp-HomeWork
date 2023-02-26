@@ -6,7 +6,45 @@
 String.Split
 */
 Console.Clear();
-string stringOfNum = ConsRead("Введите несколько чисел через пробел:");
+
+Console.Write("Введите несколько чисел через пробел: ");
+int[] numbers = GetArrayFromString(Console.ReadLine());
+Console.WriteLine($"Кол-во чисел больше '0' -> {GetCountPosElem(numbers)}");
+
+int[] GetArrayFromString(string stringArray)
+{
+// с помощью метода split мы разделяем строки на подстроки
+// в кавычках '' или "" указываем разделитель
+// кавычками '' можно через , указать несколько разделителей, метод примет любой
+// с помощью метода StringSplitOptions.RemoveEmptyEntries удаляем пробелы
+string[] numS = stringArray.Split (' ', StringSplitOptions.RemoveEmptyEntries);
+//string[] numS = stringArray.Split (',', ' ', StringSplitOptions.RemoveEmptyEntries);
+
+int[] result = new int [numS.Length];
+for (int i =0; i<result.Length; i++)
+{
+    result[i] = int.Parse(numS[i]);
+}
+return result;
+}
+
+int GetCountPosElem(int[] array)
+{
+    int count =0;
+    foreach (int item in array)
+    {
+        if (item>0) count++;
+    }
+    return count;
+}
+
+
+
+
+
+/* Console.Clear();
+Console.Write("Введите несколько чисел через пробел:");
+string stringOfNum = Console.ReadLine();
 int numElem = NumArrElem(stringOfNum);
 Console.WriteLine($"кол элементов массива = {numElem}");
 int [] newArray = NumStrArray(stringOfNum, numElem);
@@ -14,11 +52,6 @@ printArray(newArray);
 Console.WriteLine();
 OverZero(newArray);
 
-string ConsRead(string message)
-{
-    Console.Write(message);
-    return Convert.ToString(Console.ReadLine());
-}
 
 int NumArrElem(string numbers)
 {
@@ -94,7 +127,8 @@ void OverZero(int[] array)
         }
     }
     Console.WriteLine($"Кол-во чисел больше '0' -> {sum}");
-}
+} 
+*/
 
 
 /*Console.Write("Введите числа через запятую: ");
